@@ -1,8 +1,8 @@
 create view vJlhMhsKrs as
 select
-    `MHS`.`StudentID` AS `StudentID`,
+    `krs`.`matakuliah` AS `Kode_Matakuliah`,
     `MHS`.`Nama` AS `Nama`,
-    count(`krs`.`krs`.`StudentID`) AS `JLHKRS`
+    count(`krs`.`krs`.`StudentID`) AS `SKS`
 from (
         `krs`.`mahasiswa` `MHS`
         join `krs`.`krs` on(
